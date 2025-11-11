@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Harpreet kaur" />
+    <meta name="description" content="Shape Factory" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Shape Factory</title>
+  </head>
+  <body>
+    <main>
+      <h1>Shape Factory</h1>
+      <div id="popup" class="popup hidden" role="dialog" aria-modal="true">
+        <p id="popupMessage"></p>
+        <button id="popupBtn">Game Start</button>
+      </div>
+      <div class="controls">
+        <label for="shapeSelect">Shape:</label>
+        <select id="shapeSelect">
+          <option value="circle">Circle</option>
+          <option value="square">Square</option>
+        </select>
+        <label for="colorSelect">Colour:</label>
+        <select id="colorSelect">
+          <option value="#09f">Blue</option>
+          <option value="#9f0">Green</option>
+          <option value="#f90">Orange</option>
+          <option value="#f09">Pink</option>
+          <option value="#90f">Purple</option>
+        </select>
+        <button id="createBtn">Create</button>
+      </div>
+      <div id="gridContainer">
+        <div id="grid" class="grid" aria-live="polite"></div>
+      </div>
+      <script src="./script/script.js"></script>
+    </main>
+  </body>
+</html>
